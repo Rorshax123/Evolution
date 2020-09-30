@@ -1,6 +1,5 @@
 package lib;
 
-import lib.ui.Codes;
 import lib.ui.NavigationUI;
 import lib.ui.RegistrationPageObject;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,8 +15,9 @@ public class CoreTestCase extends CoreTestCaseBeforeReg {
 
 
         RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
-        NavigationUI navigationUI= new NavigationUI(driver);
-        Codes codes = new Codes();
+        NavigationUI navigationUI = new NavigationUI(driver);
+        Metoo metoo = new Metoo();
+
 
         try {
             registrationPageObject.waitForRegTitle();
@@ -29,12 +29,15 @@ public class CoreTestCase extends CoreTestCaseBeforeReg {
                 navigationUI.clickToRegistration("Login / Registration");
 
                 // ADD ONLY 9 NUMBERS this is phone number
-                registrationPageObject.clickToNumberOnReg(codes.NICKS_PHONE_NUMBER);
+                registrationPageObject.clickToNumberOnReg(metoo.NICKS_PHONE_NUMBER);
 
                 navigationUI.clickToDeny();
 
                 //ADD ONLY 5 NUMBERS this is sms code
-                registrationPageObject.clickToNumberOnReg(codes.NICKS_SMS_CODE);
+                registrationPageObject.clickToNumberOnReg(metoo.NICKS_SMS_CODE);
+
+                //ADD ONLY 5 NUMBERS this is pin code
+                registrationPageObject.clickToNumberOnReg(metoo.NICKS_PIN_CODE);
 
         }
     }

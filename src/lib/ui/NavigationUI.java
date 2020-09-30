@@ -164,6 +164,10 @@ public class NavigationUI extends MainPageObject{
         this.waitForElementPresent(By.xpath(PLAY_MARKET_CLICK), "Can not open playmarket", 5);
     }
 
+    public void waitForMushromPresent(){
+        this.waitForElementPresent(By.xpath(DASHBOARD_MUSHROM), "Can not found mushrom on dashboard", 5);
+    }
+
     public void backToAppAfterRedirectingCall(){
 
         driver.navigate().back();

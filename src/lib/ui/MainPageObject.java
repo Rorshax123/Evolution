@@ -105,7 +105,7 @@ public class MainPageObject {
         swipeLeftFromRight(200);
     }
 
-    public void swipeUntilFindLastNews(By by, String erorrMessage, int maxSwipes) {
+    public void swipeUntilFindElement(By by, String erorrMessage, int maxSwipes) {
         int alreadySwiped = 0;
 
         while (driver.findElements(by).size() == 0) {
@@ -151,7 +151,7 @@ public class MainPageObject {
 
         WebElement element = waitForElementPresent(by,
                 errorMessage,
-                5);
+                timeOutInSeconds);
 
         int left_x = element.getLocation().getX();
         int right_x = left_x + element.getSize().getWidth();
@@ -166,8 +166,22 @@ public class MainPageObject {
                 .moveTo(left_x, middle_y)
                 .release()
                 .perform();
-
     }
+
+    public void swipeLeftFromRightUntilFindElement(By by,By byText, String erorrMessage, int maxSwipes) {
+        int alreadySwiped = 0;
+
+        while (driver.findElements(byText).size() == 0) {
+            if (alreadySwiped > maxSwipes) {
+                waitForElementPresent(byText, "Cannot find element by swiping left \n" + erorrMessage, 0);
+                return;
+            }
+            swipeLeftFromRightByElement(by, "Can not find element by swiping", 5);
+            ++alreadySwiped;
+        }
+    }
+
+
 
     public void assertElementPresent(By by, String titleOfArticle){
 

@@ -29,7 +29,7 @@ public class NewsPageObject extends MainPageObject {
     }
 
     public void swipeToTheLastNews(){
-        this.swipeUntilFindLastNews(By.xpath(LAST_NEWS_TITLE), "Can not find Last news by swiping left", 20);
+        this.swipeUntilFindElement(By.xpath(LAST_NEWS_TITLE), "Can not find Last news by swiping left", 20);
     }
 
     public void clickToNewsByTitle(String substring){
