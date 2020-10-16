@@ -9,9 +9,9 @@ public class NewsPageObject extends MainPageObject {
     }
 
     private static final String
-        NEWS_TITLE = "//*[@resource-id='air.com.ssdsoftwaresolutions.clickuz:id/tvTitle'][@text='News']",
-        LAST_NEWS_TITLE = "//*[@text = 'CLICK Evolution – new, convenient, reliable.']",
-        LAST_NEWS_TITLE_TPL = "//*[@text='{SUBSTRING}']";
+        NEWS_TITLE = "xpath://*[@resource-id='air.com.ssdsoftwaresolutions.clickuz:id/tvTitle'][@text='News']",
+        LAST_NEWS_TITLE = "xpath://*[@text = 'CLICK Evolution – new, convenient, reliable.']",
+        LAST_NEWS_TITLE_TPL = "xpath://*[@text='{SUBSTRING}']";
 
     /*TEMPLATES*/
     private static String getResultSubstring(String substring){
@@ -21,19 +21,19 @@ public class NewsPageObject extends MainPageObject {
 
 
     public void waitForNewsTitle(){
-        this.waitForElementPresent(By.xpath(NEWS_TITLE), "Can not find news title", 5);
+        this.waitForElementPresent(NEWS_TITLE, "Can not find news title", 5);
     }
 
     public void waitForNewsTitleNotPresent(){
-        this.waitForElementNotPresent(By.xpath(NEWS_TITLE), "Can not find news title", 5);
+        this.waitForElementNotPresent(NEWS_TITLE, "Can not find news title", 5);
     }
 
     public void swipeToTheLastNews(){
-        this.swipeUntilFindElement(By.xpath(LAST_NEWS_TITLE), "Can not find Last news by swiping left", 20);
+        this.swipeUntilFindElement(LAST_NEWS_TITLE, "Can not find Last news by swiping left", 20);
     }
 
     public void clickToNewsByTitle(String substring){
         String newsTitle = getResultSubstring(substring);
-        this.waitForElementAndClick(By.xpath(newsTitle), "Can not open news", 5);
+        this.waitForElementAndClick(newsTitle, "Can not open news", 5);
     }
 }

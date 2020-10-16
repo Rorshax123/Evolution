@@ -1,91 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="32167454-6ec6-4ded-8f10-c82f298925e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/testBeforeRegistration/NotActiveBtns.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_4_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evolution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/evolution.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCaseBeforeReg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCaseBeforeReg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/Metoo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/Metoo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/LocalPaymentsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/LocalPaymentsPageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/NewsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/NewsPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/PaymentPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/PaymentPageObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/SearchPageObject.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/testSettings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/registration/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/AboutApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/Dashboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/General.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/LanguageForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/LocalPayments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/NotActiveBtnsAndPlus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/Payment.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCaseBeforeReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCaseBeforeReg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/LocalPaymentsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/LocalPaymentsPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/afterRegistration/testSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/registration/Registration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/AboutApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testBeforeRegistration/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/General.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/LanguageForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testBeforeRegistration/LanguageForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/LocalPayments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testBeforeRegistration/LocalPayments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/NotActiveBtnsAndPlus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/beforeRegistration/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/testBeforeRegistration/Payment.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-216502798">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="21" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="21" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="24" />
-          <entry key="gitignore" value="7" />
-          <entry key="java" value="1644" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1644" />
-          <entry key="PLAIN_TEXT" value="31" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
-              <caret line="170" column="16" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,143 +77,166 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/lib/Metoo.java" />
-        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" />
-        <option value="$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java" />
-        <option value="$PROJECT_DIR$/src/lib/CoreTestCaseBeforeReg.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1026" />
-  </component>
+  <component name="ProjectId" id="1imGk8B0lHCoBeSzY7xvAD4uXeT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="apks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="afterRegistration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Evolution" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Evolution" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="afterRegistration" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600526606501" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lib" />
+      <recent name="lib.ui" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="personalInformation.testSetttings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Settings">
+    <configuration name="LanguageForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Evolution" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
+          <option name="PATTERN" value="tests.testBeforeRegistration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
-      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.personalInformation" />
-      <option name="METHOD_NAME" value="testSetttings" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="tests.testBeforeRegistration" />
+      <option name="MAIN_CLASS_NAME" value="tests.testBeforeRegistration.LanguageForm" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalPayments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.testBeforeRegistration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.testBeforeRegistration" />
+      <option name="MAIN_CLASS_NAME" value="tests.testBeforeRegistration.LocalPayments" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotActiveBtns" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.testBeforeRegistration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.testBeforeRegistration" />
+      <option name="MAIN_CLASS_NAME" value="tests.testBeforeRegistration.NotActiveBtns" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Payment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.testBeforeRegistration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.testBeforeRegistration" />
+      <option name="MAIN_CLASS_NAME" value="tests.testBeforeRegistration.Payment" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Settings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.testBeforeRegistration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.testBeforeRegistration" />
+      <option name="MAIN_CLASS_NAME" value="tests.testBeforeRegistration.Settings" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android_before_reg" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.personalInformation.testSetttings" />
+        <item itemvalue="JUnit.Settings" />
+        <item itemvalue="JUnit.Payment" />
+        <item itemvalue="JUnit.NotActiveBtns" />
+        <item itemvalue="JUnit.LocalPayments" />
+        <item itemvalue="JUnit.LanguageForm" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -252,258 +255,76 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="personalInformation_testSetttings - 2020.09.18 at 14h 29m 46s.xml">
-      <configuration name="personalInformation.testSetttings" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="personalInformation_testSetttings - 2020.09.18 at 14h 33m 16s.xml">
-      <configuration name="personalInformation.testSetttings" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="personalInformation_testSetttings - 2020.09.18 at 15h 00m 35s.xml">
-      <configuration name="personalInformation.testSetttings" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="personalInformation_testSetttings - 2020.09.18 at 15h 05m 43s.xml">
-      <configuration name="personalInformation.testSetttings" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="6714000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1026" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32976446" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32976446" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tests/beforeRegistration/AboutApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/beforeRegistration/LanguageForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/registration/Registration.java" />
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/NavigationUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="166" column="37" selection-start-line="166" selection-start-column="37" selection-end-line="166" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/beforeRegistration/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/Metoo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Evolution.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/beforeRegistration/Dashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/NewsPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="80" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCaseBeforeReg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="66" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="100" selection-start-line="33" selection-start-column="100" selection-end-line="33" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
-          <caret line="170" column="16" selection-start-line="170" selection-start-column="16" selection-end-line="170" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Evolution</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>selenium-server-standalone-3.4.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602829254772">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1602829254772" />
+    <state x="669" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602575757108">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="669" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.977@0.23.1920.977" timestamp="1602575757108" />
+    <state x="349" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602837659267">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="349" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.977@0.23.1920.977" timestamp="1602837659267" />
+    <state x="819" y="243" key="EnvironmentVariablesDialog" timestamp="1602751278592">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="819" y="243" key="EnvironmentVariablesDialog/0.23.1920.977@0.23.1920.977" timestamp="1602751278592" />
+    <state width="1878" height="311" key="GridCell.Tab.0.bottom" timestamp="1602846733399">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1602846733399" />
+    <state width="1878" height="311" key="GridCell.Tab.0.center" timestamp="1602846733398">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1602846733398" />
+    <state width="1878" height="311" key="GridCell.Tab.0.left" timestamp="1602846733397">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1602846733397" />
+    <state width="1878" height="311" key="GridCell.Tab.0.right" timestamp="1602846733398">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1602846733398" />
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1602585785364">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1602585785364" />
+    <state width="1878" height="326" key="GridCell.Tab.1.center" timestamp="1602585785364">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1602585785364" />
+    <state width="1878" height="326" key="GridCell.Tab.1.left" timestamp="1602585785364">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1602585785364" />
+    <state width="1878" height="326" key="GridCell.Tab.1.right" timestamp="1602585785364">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1878" height="326" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1602585785364" />
+    <state x="448" y="93" key="SettingsEditor" timestamp="1602574569592">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="448" y="93" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1602574569592" />
   </component>
 </project>

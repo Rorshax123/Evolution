@@ -10,10 +10,7 @@ public class CoreTestCase extends CoreTestCaseBeforeReg {
     protected void setUp() throws Exception {
         super.setUp();
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
         capabilities.setCapability("noReset", "true");
-
-
         RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
         NavigationUI navigationUI = new NavigationUI(driver);
         Metoo metoo = new Metoo();
@@ -25,8 +22,8 @@ public class CoreTestCase extends CoreTestCaseBeforeReg {
         catch ( Exception e)
         {
                 navigationUI.clickEnglishLangBtn();
-                navigationUI.clickTopView();
-                navigationUI.clickToRegistration("Login / Registration");
+                navigationUI.clickToTopView();
+                navigationUI.clickToRegistrationByName("Login / Registration");
 
                 // ADD ONLY 9 NUMBERS this is phone number
                 registrationPageObject.clickToNumberOnReg(metoo.NICKS_PHONE_NUMBER);
