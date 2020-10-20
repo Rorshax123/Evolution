@@ -1,11 +1,12 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.LocalPaymentsPageObject;
 import lib.ui.NavigationUI;
+import lib.ui.factories.LocalPaymentsPageObjectFactory;
 import org.junit.Test;
 
-public class LocalPayments extends CoreTestCaseBeforeReg {
+public class LocalPayments extends CoreTestCase {
 
     @Test
     public void testRetaiService(){
@@ -13,7 +14,7 @@ public class LocalPayments extends CoreTestCaseBeforeReg {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openLocalPayments();
 
-        LocalPaymentsPageObject localPaymentsPageObject = new LocalPaymentsPageObject(driver);
+        LocalPaymentsPageObject localPaymentsPageObject = LocalPaymentsPageObjectFactory.get(driver);
         navigationUI.clickToDeny();
         localPaymentsPageObject.waitTitleOfLocalPayments();
         localPaymentsPageObject.clickToRetail();
@@ -28,7 +29,7 @@ public class LocalPayments extends CoreTestCaseBeforeReg {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openLocalPayments();
 
-        LocalPaymentsPageObject localPaymentsPageObject = new LocalPaymentsPageObject(driver);
+        LocalPaymentsPageObject localPaymentsPageObject = LocalPaymentsPageObjectFactory.get(driver);
         localPaymentsPageObject.clickToQrBtn();
         navigationUI.waitForFunctionBlockedAlert();
     }

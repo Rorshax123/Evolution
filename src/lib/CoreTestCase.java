@@ -1,41 +1,60 @@
 package lib;
 
+import io.appium.java_client.AppiumDriver;
+import junit.framework.TestCase;
 import lib.ui.NavigationUI;
 import lib.ui.RegistrationPageObject;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.ScreenOrientation;
 
-public class CoreTestCase extends CoreTestCaseBeforeReg {
+import java.time.Duration;
+
+public class CoreTestCase extends TestCase {
+
+    protected AppiumDriver driver;
 
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("noReset", "true");
-        RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
-        NavigationUI navigationUI = new NavigationUI(driver);
-        Metoo metoo = new Metoo();
+        driver = Platform.getInstance().getDriver();
+        screenRotationPortrait();
+        this.skipRegistration();
+    }
 
+    @Override
+    protected void tearDown() throws Exception {
+        driver.quit();
+        super.tearDown();
+    }
 
-        try {
-            registrationPageObject.waitForRegTitle();
-        }
-        catch ( Exception e)
-        {
-                navigationUI.clickEnglishLangBtn();
-                navigationUI.clickToTopView();
-                navigationUI.clickToRegistrationByName("Login / Registration");
+    protected void screenRotationPortrait() {
+        driver.rotate(ScreenOrientation.PORTRAIT);
+    }
 
-                // ADD ONLY 9 NUMBERS this is phone number
-                registrationPageObject.clickToNumberOnReg(metoo.NICKS_PHONE_NUMBER);
+    protected void screenRotationLandscape() {
+        driver.rotate(ScreenOrientation.LANDSCAPE);
+    }
 
-                navigationUI.clickToDeny();
+    protected void runAppInBackground(int seconds) {
+        driver.runAppInBackground(Duration.ofMillis(seconds));
+    }
 
-                //ADD ONLY 5 NUMBERS this is sms code
-                registrationPageObject.clickToNumberOnReg(metoo.NICKS_SMS_CODE);
+    protected void clickToSystemBack() {
+        driver.navigate().back();
+    }
 
-                //ADD ONLY 5 NUMBERS this is pin code
-                registrationPageObject.clickToNumberOnReg(metoo.NICKS_PIN_CODE);
+    protected void resetApp() {
+        driver.resetApp();
+    }
 
+    private void skipRegistration(){
+        if (Platform.getInstance().isAndroid()){
+            RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
+            try {
+                registrationPageObject.waitForRegTitle();
+            }catch (Exception e){
+                registrationPageObject.skipRegistrationFast();
+            }
         }
     }
+
 }

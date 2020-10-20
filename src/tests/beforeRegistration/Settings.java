@@ -1,11 +1,11 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.NavigationUI;
 import lib.ui.SettingsPageObject;
 import org.junit.Test;
 
-public class Settings extends CoreTestCaseBeforeReg {
+public class Settings extends CoreTestCase {
 
     @Test
     public void testAboutApp(){

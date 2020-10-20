@@ -1,12 +1,12 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.NavigationUI;
 import lib.ui.NewsPageObject;
 import lib.ui.RegistrationPageObject;
 import org.junit.Test;
 
-public class Dashboard extends CoreTestCaseBeforeReg {
+public class Dashboard extends CoreTestCase {
 
     @Test
     public void testRegistration(){

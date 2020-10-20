@@ -1,9 +1,7 @@
 package tests.afterRegistration.settings;
 
 import lib.CoreTestCase;
-import lib.CoreTestCaseBeforeReg;
 import lib.ui.NavigationUI;
-import lib.ui.RegistrationPageObject;
 import lib.ui.SettingsPageObject;
 import org.junit.Test;
 

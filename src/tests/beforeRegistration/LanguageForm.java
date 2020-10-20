@@ -1,10 +1,10 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.NavigationUI;
 import org.junit.Test;
 
-public class LanguageForm extends CoreTestCaseBeforeReg {
+public class LanguageForm extends CoreTestCase {
 
     @Test
     public void testLanguageRu(){

@@ -1,10 +1,10 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.NavigationUI;
 import org.junit.Test;
 
-public class NotActiveBtns extends CoreTestCaseBeforeReg {
+public class NotActiveBtns extends CoreTestCase {
     @Test
     public void testPlus(){
         NavigationUI navigationUI = new NavigationUI(driver);

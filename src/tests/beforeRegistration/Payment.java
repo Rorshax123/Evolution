@@ -1,11 +1,11 @@
-package tests.testBeforeRegistration;
+package tests.beforeRegistration;
 
-import lib.CoreTestCaseBeforeReg;
+import lib.CoreTestCase;
 import lib.ui.NavigationUI;
 import lib.ui.PaymentPageObject;
 import org.junit.Test;
 
-public class Payment extends CoreTestCaseBeforeReg {
+public class Payment extends CoreTestCase {
 
     @Test
     public void testMobileOperatorsCategory(){

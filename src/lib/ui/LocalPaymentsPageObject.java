@@ -2,13 +2,13 @@ package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
 
-public class LocalPaymentsPageObject extends MainPageObject {
+abstract public class LocalPaymentsPageObject extends MainPageObject {
 
     public LocalPaymentsPageObject(AppiumDriver driver) {
         super(driver);
     }
 
-    private static final String
+     protected static String
         LOCAL_PATMENTS_TITLE = "xpath://*[@text = 'Local Payment']",
         LOCAL_PAYMENTS_QR_BTN = "xpath://*[@resource-id = 'air.com.ssdsoftwaresolutions.clickuz:id/btnQr']",
         LOCAL_PAYMENTS_SEARCH_FIELD = "xpath://*[@resource-id = 'air.com.ssdsoftwaresolutions.clickuz:id/etSearchText']",
