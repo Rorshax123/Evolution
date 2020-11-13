@@ -2,7 +2,6 @@ package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
 import lib.Metoo;
-import org.openqa.selenium.By;
 
 public class RegistrationPageObject extends MainPageObject{
 
@@ -33,7 +32,7 @@ public class RegistrationPageObject extends MainPageObject{
         this.waitForElementAndClick(linkToNumber, " Cannot found nine", 5);
     }
 
-    public void clickToNumberOnReg(String phoneNumber){
+    public void clickToNumbers(String phoneNumber){
 
         for (int i = 0; i < phoneNumber.length(); i++ ){
             int numb = Character.getNumericValue(phoneNumber.charAt(i));
@@ -54,13 +53,26 @@ public class RegistrationPageObject extends MainPageObject{
     public void skipRegistrationFast(){
         NavigationUI navigationUI = new NavigationUI(driver);
         Metoo metoo = new Metoo();
-        navigationUI.openMainMenu();
+        navigationUI.openMainMenuBeforeReg();
         navigationUI.clickToRegistration();
-        this.clickToNumberOnReg(metoo.NICKS_PHONE_NUMBER);
+        this.clickToNumbers(metoo.NICKS_PHONE_NUMBER);
         navigationUI.clickToDeny();
-        this.clickToNumberOnReg(metoo.NICKS_SMS_CODE);
-        this.waitForgotClickPinBtn();
-        this.clickToNumberOnReg(metoo.NICKS_PIN_CODE);
+        this.clickToNumbers(metoo.NICKS_SMS_CODE);
+    }
 
+
+    public void waitPinFormAndAddPin(){
+        Metoo metoo = new Metoo();
+        this.waitForgotClickPinBtn();
+        this.clickToNumbers(metoo.NICKS_PIN_CODE);
+    }
+
+    public void addPin(){
+        Metoo metoo = new Metoo();
+        this.clickToNumbers(metoo.NICKS_PIN_CODE);
+    }
+
+    public void addPin(String newPin){
+        this.clickToNumbers(newPin);
     }
 }

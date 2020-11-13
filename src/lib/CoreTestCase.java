@@ -46,6 +46,11 @@ public class CoreTestCase extends TestCase {
         driver.resetApp();
     }
 
+    protected void closeAndLaunchApp(){
+        driver.closeApp();
+        driver.launchApp();
+    }
+
     private void skipRegistration(){
         if (Platform.getInstance().isAndroid()){
             RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);

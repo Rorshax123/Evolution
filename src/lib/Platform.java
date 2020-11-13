@@ -57,7 +57,7 @@ public class Platform {
         capabilities.setCapability("appActivity", "uz.click.evo.ui.mainrouter.MainRouterActivity");
         capabilities.setCapability("app", "/Users/ailus/Desktop/Evolution/apks/evo.apks");
         if (this.isAndroid()){
-            capabilities.setCapability("fullReset", "false");
+            capabilities.setCapability("noReset", "true");
         }
         return capabilities;
     }

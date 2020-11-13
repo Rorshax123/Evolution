@@ -177,9 +177,9 @@ public class MainPageObject {
 
         TouchAction action = new TouchAction(driver);
         action
-                .press(PointOption.point(right_x, middle_y))
-                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(300)))
-                .moveTo(PointOption.point(left_x, middle_y))
+                .press(PointOption.point(right_x - 10, middle_y))
+                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(8000)))
+                .moveTo(PointOption.point(left_x + 10, middle_y))
                 .release()
                 .perform();
     }

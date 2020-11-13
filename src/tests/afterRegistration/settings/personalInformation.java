@@ -8,24 +8,62 @@ import org.junit.Test;
 public class personalInformation extends CoreTestCase {
 
     @Test
-    public void testSetttings() throws InterruptedException {
+    public void testBirthDate(){
 
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
-
-        navigationUI.waitForMushromPresent();
-        navigationUI.clickToMenu();
-        navigationUI.clickToSettings();
-
+        navigationUI.openSettings();
         settingsPageObject.clickToPersonalInfo();
-        settingsPageObject.waitForSettingsCategoryTitleByName("Personal Info");
         settingsPageObject.clickToBirthDate();
         settingsPageObject.waitForSettingsCategoryTitleByName("Date of Birth");
-        settingsPageObject.swipeUntilFindRequiredDate("1923");
+        settingsPageObject.swipeUntilFindRequireYear("1924");
+        settingsPageObject.clickToNext();
+        settingsPageObject.clickToSave();
+    }
 
-        Thread.sleep(5000);
+    @Test
+    public void testRegion(){
+        NavigationUI navigationUI = new NavigationUI(driver);
+        SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
 
+        navigationUI.openSettings();
+        settingsPageObject.clickToPersonalInfo();
+        settingsPageObject.clickToRegion();
+        settingsPageObject.waitForSettingsCategoryTitleByName("Pick your region");
+        settingsPageObject.swipeFromBottomToUp();
+        settingsPageObject.clickToRegionKhorezm();
+        settingsPageObject.clickToSave();
+    }
 
+    @Test
+    public void testFullNameUser(){
 
+        NavigationUI navigationUI = new NavigationUI(driver);
+        SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
+        navigationUI.openSettings();
+        settingsPageObject.clickToPersonalInfo();
+        settingsPageObject.clickToFirstNameAndSendkeys("Nikolay");
+        settingsPageObject.clickToSecondNameAndSendkeys("Zadorojniy");
+        settingsPageObject.clickToThirdNameAndSendkeys("Vladimirovich");
+        settingsPageObject.clickToSave();
+    }
+
+    @Test
+    public void testProfilePicture(){
+
+        NavigationUI navigationUI = new NavigationUI(driver);
+        SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
+        navigationUI.openSettings();
+        settingsPageObject.clickToPersonalInfo();
+        settingsPageObject.clickToProfilePic();
+        settingsPageObject.clickToPickFromGallery();
+        navigationUI.clickToDeny();
+        settingsPageObject.clickToProfilePic();
+        settingsPageObject.clickToTakePictureACamera();
+        navigationUI.clickToDeny();
+        navigationUI.clickToDeny();
+        settingsPageObject.clickToProfilePic();
+        settingsPageObject.clickToRemoveProfilePic();
+        settingsPageObject.clickToSave();
     }
 }

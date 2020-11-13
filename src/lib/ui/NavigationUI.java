@@ -1,6 +1,7 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import lib.Platform;
 
 public class NavigationUI extends MainPageObject{
     public NavigationUI(AppiumDriver driver) {
@@ -38,10 +39,11 @@ public class NavigationUI extends MainPageObject{
         DASHBOARD_SETTINGS = "id:air.com.ssdsoftwaresolutions.clickuz:id/ivTopLeftIcon",
         DASHBOARD_USER_NAME = "id:air.com.ssdsoftwaresolutions.clickuz:id/tvUserName",
         BACK_BTN = "xpath://*[@resource-id='air.com.ssdsoftwaresolutions.clickuz:id/ivBack']",
-        ALLOW_BTN = "xpath://*[@text = 'DENY']",
-        DENY_BTN = "xpath://*[@text = 'ALLOW']",
+        ALLOW_BTN = "xpath://*[@text = 'ALLOW']",
+        DENY_BTN = "xpath://*[@text = 'DENY']",
         PLAY_MARKET_CLICK = "xpath://*[@text = 'CLICK.UZ (CLICK LLC)']",
         PLAY_MARKET_SIGN_IN = "id:com.android.vending:id/0_resource_name_obfuscated",
+        DASHBOARD_HIDE_BALANCE_BTN = "xpath://*[@text = 'Hide balance']",
         DASHBOARD_REG_BTN = "id:air.com.ssdsoftwaresolutions.clickuz:id/btnRegistrationCard",
         DASHBOARD_REG_BTN_TPL = "xpath://*[@resource-id='air.com.ssdsoftwaresolutions.clickuz:id/btnRegistrationCard']//*[@text='{SUBSTRING}']";
 
@@ -228,9 +230,21 @@ public class NavigationUI extends MainPageObject{
     }
 
     public void openMainMenu(){
+        if (Platform.getInstance().isAndroid()){
+            RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
+            registrationPageObject.waitPinFormAndAddPin();
+            this.waitForElementPresent(DASHBOARD_HIDE_BALANCE_BTN, "Can not find hide balance btn", 5);
+        } else if (Platform.getInstance().isAndroidBeforeReg()) {
+            this.waitForElementAndClick(ENGLISH_LANG_BTN, "Can not find English lang btn", 5);
+            this.waitForElementAndClick(DASHBOARD_TOP_VIEW, "Can not find top view", 5);
+        }
+    }
+
+    public void openMainMenuBeforeReg(){
         this.waitForElementAndClick(ENGLISH_LANG_BTN, "Can not find English lang btn", 5);
         this.waitForElementAndClick(DASHBOARD_TOP_VIEW, "Can not find top view", 5);
     }
+
     public void openSettings(){
         this.openMainMenu();
         this.clickToMenu();
