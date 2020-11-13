@@ -2,7 +2,6 @@ package lib;
 
 import io.appium.java_client.AppiumDriver;
 import junit.framework.TestCase;
-import lib.ui.NavigationUI;
 import lib.ui.RegistrationPageObject;
 import org.openqa.selenium.ScreenOrientation;
 
@@ -46,17 +45,17 @@ public class CoreTestCase extends TestCase {
         driver.resetApp();
     }
 
-    protected void closeAndLaunchApp(){
+    protected void closeAndLaunchApp() {
         driver.closeApp();
         driver.launchApp();
     }
 
-    private void skipRegistration(){
-        if (Platform.getInstance().isAndroid()){
+    private void skipRegistration() {
+        if (Platform.getInstance().isAndroid()) {
             RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);
             try {
                 registrationPageObject.waitForRegTitle();
-            }catch (Exception e){
+            } catch (Exception e) {
                 registrationPageObject.skipRegistrationFast();
             }
         }

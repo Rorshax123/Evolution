@@ -14,40 +14,41 @@ public class Platform {
             PLATFORM_ANDROID = "android",
             PLATFORM_IOS = "ios";
     private static Platform instance;
-    private Platform(){}
 
-    public static Platform getInstance(){
+    private Platform() {
+    }
+
+    public static Platform getInstance() {
         if (instance == null) {
             instance = new Platform();
         }
         return instance;
     }
 
-    public AppiumDriver getDriver() throws Exception{
+    public AppiumDriver getDriver() throws Exception {
         URL URL = new URL(APPIUM_URL);
-        if (this.isAndroid() || this.isAndroidBeforeReg()){
+        if (this.isAndroid() || this.isAndroidBeforeReg()) {
             return new AndroidDriver(URL, this.getAndroidDesireCapabilities());
-        } else if (this.isIOS()){
+        } else if (this.isIOS()) {
             return new IOSDriver(URL, this.getIOSDesiredCapabilities());
-        }
-        else {
+        } else {
             throw new Exception("Can not detect type of the driver. Platform value: " + this.getPlatformVar());
         }
     }
 
-    public boolean isAndroid(){
+    public boolean isAndroid() {
         return isPlatform(PLATFORM_ANDROID);
     }
 
-    public boolean isAndroidBeforeReg(){
+    public boolean isAndroidBeforeReg() {
         return isPlatform(PLATFORM_ANDROID_BEFORE_REG);
     }
 
-    public boolean isIOS(){
+    public boolean isIOS() {
         return isPlatform(PLATFORM_IOS);
     }
 
-    private DesiredCapabilities getAndroidDesireCapabilities(){
+    private DesiredCapabilities getAndroidDesireCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "AndroidDevice");
@@ -56,23 +57,23 @@ public class Platform {
         capabilities.setCapability("appPackage", "air.com.ssdsoftwaresolutions.clickuz");
         capabilities.setCapability("appActivity", "uz.click.evo.ui.mainrouter.MainRouterActivity");
         capabilities.setCapability("app", "/Users/ailus/Desktop/Evolution/apks/evo.apks");
-        if (this.isAndroid()){
+        if (this.isAndroid()) {
             capabilities.setCapability("noReset", "true");
         }
         return capabilities;
     }
 
-    private DesiredCapabilities getIOSDesiredCapabilities(){
+    private DesiredCapabilities getIOSDesiredCapabilities() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         return capabilities;
     }
 
-    private boolean isPlatform(String myPlatform){
+    private boolean isPlatform(String myPlatform) {
         String platform = this.getPlatformVar();
         return myPlatform.equals(platform);
     }
 
-    private String getPlatformVar(){
+    private String getPlatformVar() {
         return System.getenv("PLATFORM");
     }
 }

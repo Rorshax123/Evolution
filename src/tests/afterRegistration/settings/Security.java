@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class Security extends CoreTestCase {
     @Test
-    public void testChangeClickPin(){
+    public void testChangeClickPin() {
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
         RegistrationPageObject registrationPageObject = new RegistrationPageObject(driver);

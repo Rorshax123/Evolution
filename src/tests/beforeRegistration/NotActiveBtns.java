@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class NotActiveBtns extends CoreTestCase {
     @Test
-    public void testPlus(){
+    public void testPlus() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToPlus();
@@ -15,7 +15,7 @@ public class NotActiveBtns extends CoreTestCase {
     }
 
     @Test
-    public void testMinus(){
+    public void testMinus() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToMinus();

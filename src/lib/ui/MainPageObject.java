@@ -20,8 +20,7 @@ public class MainPageObject {
     protected AppiumDriver driver;
 
 
-    public MainPageObject(AppiumDriver driver)
-    {
+    public MainPageObject(AppiumDriver driver) {
         this.driver = driver;
     }
 
@@ -36,7 +35,7 @@ public class MainPageObject {
         );
     }
 
-    public void waitForSearchElementPresentByText(String locator,String text, String errorMessage, long timeoutInSeconds) {
+    public void waitForSearchElementPresentByText(String locator, String text, String errorMessage, long timeoutInSeconds) {
         By by = this.getLocatorByString(locator);
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(errorMessage);
@@ -112,7 +111,7 @@ public class MainPageObject {
                 .perform();
     }
 
-    public void swipeLeftFromRightQuick(){
+    public void swipeLeftFromRightQuick() {
         swipeLeftFromRight(200);
     }
 
@@ -129,12 +128,12 @@ public class MainPageObject {
         }
     }
 
-    public void swipeLeftFromRightY_80(int timeInSeconds){
+    public void swipeLeftFromRightY_80(int timeInSeconds) {
 
         TouchAction action = new TouchAction(driver);
 
         Dimension size = driver.manage().window().getSize();
-        int y = (int)(size.height * 0.8);
+        int y = (int) (size.height * 0.8);
 
         int startX = (int) (size.width * 0.9);
         int endX = (int) (size.width * 0.1);
@@ -148,11 +147,11 @@ public class MainPageObject {
                 .perform();
     }
 
-    public void swipeCategoryOnDashboardAndClick(String locator, String errorMessage, int maxswipes){
+    public void swipeCategoryOnDashboardAndClick(String locator, String errorMessage, int maxswipes) {
         int alreadySwiped = 0;
         By by = this.getLocatorByString(locator);
-        while (driver.findElements(by).size() == 0){
-            if (alreadySwiped > maxswipes){
+        while (driver.findElements(by).size() == 0) {
+            if (alreadySwiped > maxswipes) {
                 waitForElementAndClick(locator, "Can not found element by swiping \n" + errorMessage, 0);
                 return;
             }
@@ -160,7 +159,6 @@ public class MainPageObject {
             ++alreadySwiped;
         }
     }
-
 
 
     public void swipeLeftFromRightByElement(String locator, String errorMessage, long timeOutInSeconds) {
@@ -204,22 +202,22 @@ public class MainPageObject {
         return elements.size();
     }
 
-    public String waitForElementAndGetAttribute(String locator, String attribute, String errorMessage, long timeOutInSeconds){
+    public String waitForElementAndGetAttribute(String locator, String attribute, String errorMessage, long timeOutInSeconds) {
         WebElement element = waitForElementPresent(locator, errorMessage, 5);
         return element.getAttribute(attribute);
     }
 
-    private By getLocatorByString(String locatorWithType){
-        String[] explodedLocator = locatorWithType.split(Pattern.quote(":"),2);
+    private By getLocatorByString(String locatorWithType) {
+        String[] explodedLocator = locatorWithType.split(Pattern.quote(":"), 2);
         String byType = explodedLocator[0];
         String locator = explodedLocator[1];
 
-        if (byType.equals("xpath")){
+        if (byType.equals("xpath")) {
             return By.xpath(locator);
-        }else if (byType.equals("id")){
+        } else if (byType.equals("id")) {
             return By.id(locator);
-        }else {
-            throw new  IllegalArgumentException("Can not get type of locator. Locator " + locatorWithType);
+        } else {
+            throw new IllegalArgumentException("Can not get type of locator. Locator " + locatorWithType);
         }
     }
 

@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Payment extends CoreTestCase {
 
     @Test
-    public void testMobileOperatorsCategory(){
+    public void testMobileOperatorsCategory() {
 
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openPayment();
@@ -28,7 +28,7 @@ public class Payment extends CoreTestCase {
     }
 
     @Test
-    public void testQR(){
+    public void testQR() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openPayment();
 

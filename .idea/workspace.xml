@@ -21,19 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="32167454-6ec6-4ded-8f10-c82f298925e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/Platform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/personalInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/personalInformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/afterRegistration/settings/Security.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/afterRegistration/settings/Security.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,22 +265,22 @@
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="819" y="243" key="EnvironmentVariablesDialog/0.23.1920.977@0.23.1920.977" timestamp="1602751278592" />
-    <state width="1878" height="311" key="GridCell.Tab.0.bottom" timestamp="1605261948949">
+    <state width="1878" height="311" key="GridCell.Tab.0.bottom" timestamp="1605262285841">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605261948949" />
-    <state width="1878" height="311" key="GridCell.Tab.0.center" timestamp="1605261948949">
+    <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
+    <state width="1878" height="311" key="GridCell.Tab.0.center" timestamp="1605262285841">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1605261948949" />
-    <state width="1878" height="311" key="GridCell.Tab.0.left" timestamp="1605261948948">
+    <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
+    <state width="1878" height="311" key="GridCell.Tab.0.left" timestamp="1605262285840">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1605261948948" />
-    <state width="1878" height="311" key="GridCell.Tab.0.right" timestamp="1605261948949">
+    <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1605262285840" />
+    <state width="1878" height="311" key="GridCell.Tab.0.right" timestamp="1605262285841">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1605261948949" />
+    <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
     <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1605255668260">
       <screen x="0" y="23" width="1920" height="977" />
     </state>

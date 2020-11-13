@@ -9,7 +9,7 @@ import org.junit.Test;
 public class LocalPayments extends CoreTestCase {
 
     @Test
-    public void testRetaiService(){
+    public void testRetaiService() {
 
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openLocalPayments();
@@ -25,7 +25,7 @@ public class LocalPayments extends CoreTestCase {
     }
 
     @Test
-    public void testQRScanner(){
+    public void testQRScanner() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openLocalPayments();
 

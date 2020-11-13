@@ -8,7 +8,7 @@ import org.junit.Test;
 public class Settings extends CoreTestCase {
 
     @Test
-    public void testAboutApp(){
+    public void testAboutApp() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openSettings();
 
@@ -25,7 +25,7 @@ public class Settings extends CoreTestCase {
     }
 
     @Test
-    public void testVibration(){
+    public void testVibration() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openSettings();
 
@@ -37,8 +37,9 @@ public class Settings extends CoreTestCase {
         settingsPageObject.clickToGeneral();
         settingsPageObject.turnOnVibration();
     }
+
     @Test
-    public void testChangeTheme(){
+    public void testChangeTheme() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openSettings();
 
@@ -51,7 +52,7 @@ public class Settings extends CoreTestCase {
     }
 
     @Test
-    public void testChangeLanguage(){
+    public void testChangeLanguage() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openSettings();
 

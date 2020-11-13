@@ -9,7 +9,7 @@ import org.junit.Test;
 public class Dashboard extends CoreTestCase {
 
     @Test
-    public void testRegistration(){
+    public void testRegistration() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToRegistration();
@@ -20,7 +20,7 @@ public class Dashboard extends CoreTestCase {
     }
 
     @Test
-    public void testMushromReg(){
+    public void testMushromReg() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToMushrom();
@@ -36,7 +36,7 @@ public class Dashboard extends CoreTestCase {
     }
 
     @Test
-    public void testNews(){
+    public void testNews() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToNews();
@@ -53,7 +53,7 @@ public class Dashboard extends CoreTestCase {
     }
 
     @Test
-    public void testMenu(){
+    public void testMenu() {
         NavigationUI navigationUI = new NavigationUI(driver);
         navigationUI.openMainMenu();
         navigationUI.clickToMenu();

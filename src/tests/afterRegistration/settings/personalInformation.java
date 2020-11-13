@@ -8,7 +8,7 @@ import org.junit.Test;
 public class personalInformation extends CoreTestCase {
 
     @Test
-    public void testBirthDate(){
+    public void testBirthDate() {
 
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
@@ -22,7 +22,7 @@ public class personalInformation extends CoreTestCase {
     }
 
     @Test
-    public void testRegion(){
+    public void testRegion() {
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
 
@@ -36,7 +36,7 @@ public class personalInformation extends CoreTestCase {
     }
 
     @Test
-    public void testFullNameUser(){
+    public void testFullNameUser() {
 
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
@@ -49,7 +49,7 @@ public class personalInformation extends CoreTestCase {
     }
 
     @Test
-    public void testProfilePicture(){
+    public void testProfilePicture() {
 
         NavigationUI navigationUI = new NavigationUI(driver);
         SettingsPageObject settingsPageObject = new SettingsPageObject(driver);
