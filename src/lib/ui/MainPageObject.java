@@ -80,7 +80,7 @@ public class MainPageObject {
         Dimension size = driver.manage().window().getSize();
         int x = size.width / 2;
 
-        int startY = (int) (size.height * 0.8);
+        int startY = (int) (size.height * 0.7);
         int endY = (int) (size.height * 0.2);
 
 
@@ -124,6 +124,19 @@ public class MainPageObject {
                 return;
             }
             swipeLeftFromRightQuick();
+            ++alreadySwiped;
+        }
+    }
+
+    public void swipeUpUntilFindElement(String locator, String erorrMessage, int maxSwipes) {
+        int alreadySwiped = 0;
+        By by = this.getLocatorByString(locator);
+        while (driver.findElements(by).size() == 0) {
+            if (alreadySwiped > maxSwipes) {
+                waitForElementPresent(locator, "Cannot find element by swiping up \n" + erorrMessage, 0);
+                return;
+            }
+            this.swipeUp(1000);
             ++alreadySwiped;
         }
     }

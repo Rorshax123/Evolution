@@ -56,7 +56,7 @@ public class Platform {
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("appPackage", "air.com.ssdsoftwaresolutions.clickuz");
         capabilities.setCapability("appActivity", "uz.click.evo.ui.mainrouter.MainRouterActivity");
-        capabilities.setCapability("app", "/Users/ailus/Desktop/Evolution/apks/evo.apks");
+        capabilities.setCapability("app", "/Users/ailus/Desktop/Evolution/apks/evo_debug.apks");
         if (this.isAndroid()) {
             capabilities.setCapability("noReset", "true");
         }

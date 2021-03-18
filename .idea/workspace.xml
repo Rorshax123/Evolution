@@ -21,12 +21,26 @@
   <component name="ChangeListManager">
     <list default="true" id="32167454-6ec6-4ded-8f10-c82f298925e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/NewsPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/PaymentPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/CoreTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/Metoo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/Metoo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/Platform.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/Platform.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/LocalPaymentsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/LocalPaymentsPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/MainPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/NavigationUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/NewsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/NewsPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/PaymentPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/PaymentPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/RegistrationPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/lib/ui/SettingsPageObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/Security.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/Security.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/personalInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/tests/afterRegistration/settings/personalInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/evolution/tests/beforeRegistration/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/RegistrationPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SettingsPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/afterRegistration/settings/Security.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/afterRegistration/settings/Security.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/afterRegistration/settings/personalInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/afterRegistration/settings/PersonalInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +80,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3045977" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -74,8 +88,71 @@
       <recent name="lib.ui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Security.testChangeClickPin">
-    <configuration name="Security.testChangeClickPin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChangeTheme">
+    <configuration name="ChangeTheme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
+      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.ChangeTheme" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeTheme.testChangingDarkTheme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
+      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.ChangeTheme" />
+      <option name="METHOD_NAME" value="testChangingDarkTheme" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeTheme.testChangingTheme" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
+      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.ChangeTheme" />
+      <option name="METHOD_NAME" value="testChangingTheme" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Security.testFingerPrintBtn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Evolution" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -86,7 +163,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
       <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.Security" />
-      <option name="METHOD_NAME" value="testChangeClickPin" />
+      <option name="METHOD_NAME" value="testFingerPrintBtn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Security.testLockApplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Evolution" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
+      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.Security" />
+      <option name="METHOD_NAME" value="testLockApplication" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <envs>
@@ -109,97 +207,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="personalInformation.testBirthDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Evolution" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
-      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.personalInformation" />
-      <option name="METHOD_NAME" value="testBirthDate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="personalInformation.testFullNameUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Evolution" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
-      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.personalInformation" />
-      <option name="METHOD_NAME" value="testFullNameUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="personalInformation.testProfilePicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Evolution" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
-      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.personalInformation" />
-      <option name="METHOD_NAME" value="testProfilePicture" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="personalInformation.testRegion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Evolution" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.afterRegistration.settings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.afterRegistration.settings" />
-      <option name="MAIN_CLASS_NAME" value="tests.afterRegistration.settings.personalInformation" />
-      <option name="METHOD_NAME" value="testRegion" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Security.testChangeClickPin" />
-        <item itemvalue="JUnit.personalInformation.testFullNameUser" />
-        <item itemvalue="JUnit.personalInformation.testProfilePicture" />
-        <item itemvalue="JUnit.personalInformation.testRegion" />
-        <item itemvalue="JUnit.personalInformation.testBirthDate" />
+        <item itemvalue="JUnit.ChangeTheme" />
+        <item itemvalue="JUnit.ChangeTheme.testChangingDarkTheme" />
+        <item itemvalue="JUnit.ChangeTheme.testChangingTheme" />
+        <item itemvalue="JUnit.Security.testLockApplication" />
+        <item itemvalue="JUnit.Security.testFingerPrintBtn" />
       </list>
     </recent_temporary>
   </component>
@@ -241,65 +255,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603174392366">
+    <state x="448" y="93" key="SettingsEditor" timestamp="1615972396195">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1603174392366" />
-    <state x="669" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602575757108">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="669" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.977@0.23.1920.977" timestamp="1602575757108" />
-    <state x="643" y="193" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1603092502104">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="643" y="193" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1920.977@0.23.1920.977" timestamp="1603092502104" />
-    <state x="349" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602837659267">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="349" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.977@0.23.1920.977" timestamp="1602837659267" />
-    <state x="698" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603087929898">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="698" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.977@0.23.1920.977" timestamp="1603087929898" />
-    <state x="819" y="243" key="EnvironmentVariablesDialog" timestamp="1602751278592">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="819" y="243" key="EnvironmentVariablesDialog/0.23.1920.977@0.23.1920.977" timestamp="1602751278592" />
-    <state width="1878" height="311" key="GridCell.Tab.0.bottom" timestamp="1605262285841">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
-    <state width="1878" height="311" key="GridCell.Tab.0.center" timestamp="1605262285841">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
-    <state width="1878" height="311" key="GridCell.Tab.0.left" timestamp="1605262285840">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1605262285840" />
-    <state width="1878" height="311" key="GridCell.Tab.0.right" timestamp="1605262285841">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="311" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1605262285841" />
-    <state width="1878" height="326" key="GridCell.Tab.1.bottom" timestamp="1605255668260">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1605255668260" />
-    <state width="1878" height="326" key="GridCell.Tab.1.center" timestamp="1605255668259">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1605255668259" />
-    <state width="1878" height="326" key="GridCell.Tab.1.left" timestamp="1605255668258">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1605255668258" />
-    <state width="1878" height="326" key="GridCell.Tab.1.right" timestamp="1605255668259">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state width="1878" height="326" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1605255668259" />
-    <state x="448" y="93" key="SettingsEditor" timestamp="1602574569592">
-      <screen x="0" y="23" width="1920" height="977" />
-    </state>
-    <state x="448" y="93" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1602574569592" />
+    <state x="448" y="93" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1615972396195" />
   </component>
 </project>

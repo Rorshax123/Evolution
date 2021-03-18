@@ -1,6 +1,8 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class SettingsPageObject extends MainPageObject {
     private static final String
@@ -8,9 +10,9 @@ public class SettingsPageObject extends MainPageObject {
             SETTINGS_GENERAL = "xpath://*[@text = 'General']",
             GENERAL_VIBRATION = "xpath://*[@text = 'Vibro-response']",
             GENERAL_CHANGE_THEME = "xpath://*[@text = 'Change theme']",
-            CHANGE_THEME_TO_SYSTEM = "xpath://*[@text = 'System mode']",
-            CHANGE_THEME_TO_DARK = "xpath://*[@text = 'Dark mode']",
-            CHANGE_THEME_TO_LIGHT = "xpath://*[@text = 'Light mode']",
+            CHANGE_THEME_TO_SYSTEM = "id:air.com.ssdsoftwaresolutions.clickuz:id/llSystem",
+            CHANGE_THEME_TO_DARK = "id:air.com.ssdsoftwaresolutions.clickuz:id/llNight",
+            CHANGE_THEME_TO_LIGHT = "id:air.com.ssdsoftwaresolutions.clickuz:id/llLight",
             SETTINGS_PERSONAL_INFO = "xpath://*[@text = 'Personal info']",
             BIRTH_DATE = "id:air.com.ssdsoftwaresolutions.clickuz:id/tvBirthDate",
             NEXT = "id:air.com.ssdsoftwaresolutions.clickuz:id/btnNext",
@@ -32,6 +34,20 @@ public class SettingsPageObject extends MainPageObject {
             ABOUT_RATE_US_ON_GOOGLE_PLAY = "xpath://*[@text = 'Rate us on Google Play']",
             SETTINGS_SECURITY = "id:air.com.ssdsoftwaresolutions.clickuz:id/llSecurity",
             CHANGE_CLICK_PIN = "id:air.com.ssdsoftwaresolutions.clickuz:id/llChangePin",
+            TRUSTED_DEVICES = "id:air.com.ssdsoftwaresolutions.clickuz:id/llDevices",
+            FOURTH_INDEX_SESSION_TIME = "xpath://*[@class = 'android.widget.LinearLayout'][@index = '3']//*[@resource-id = 'air.com.ssdsoftwaresolutions.clickuz:id/tvLoginTime']",
+            FOURTH_INDEX_SESSIONS_X_BTN = "xpath://*[@class = 'android.widget.LinearLayout'][@index = '3']",
+            KILL_ALL_SESIONS = "id:air.com.ssdsoftwaresolutions.clickuz:id/tvTerminateDevices",
+            CANCEL_BTN = "id:air.com.ssdsoftwaresolutions.clickuz:id/btnCancel",
+            NEXT_BTN = "id:air.com.ssdsoftwaresolutions.clickuz:id/btnSuccess",
+            FINGER_PRINT_BTN = "id:air.com.ssdsoftwaresolutions.clickuz:id/swUseFingerprint",
+            LOCK_APP_BTN = "id:air.com.ssdsoftwaresolutions.clickuz:id/swAppLock",
+            TECHNICAL_SUPPORT = "id:air.com.ssdsoftwaresolutions.clickuz:id/llSupport",
+            TS_REGISTRATION = "xpath://*[@text = 'Registration']",
+            TS_PAYMENT = "xpath://*[@text = 'Payment']",
+            TS_BALANCE = "xpath://*[@text = 'Balance']",
+            TS_OTHER = "xpath://*[@text = 'Other']",
+    
             SETTINGS_CATEGORY_TITLE_TPL = "xpath://*[@resource-id = 'air.com.ssdsoftwaresolutions.clickuz:id/tvTitle'][@text = '{SUBSTRING}']",
             BIRT_DATE_YEAR_TPL = "xpath://*[@resource-id = 'air.com.ssdsoftwaresolutions.clickuz:id/yearPicker']//*[@text = '{SUBSTRING}']";
 
@@ -119,7 +135,7 @@ public class SettingsPageObject extends MainPageObject {
     }
 
     public void clickToChangeTheme() {
-        this.waitForElementAndClick(GENERAL_CHANGE_THEME, "Can not found cahnge theme btn", 5);
+        this.waitForElementAndClick(GENERAL_CHANGE_THEME, "Can not found change theme btn", 5);
         this.waitForSettingsCategoryTitleByName("Change theme");
     }
 
@@ -158,12 +174,87 @@ public class SettingsPageObject extends MainPageObject {
         this.waitForSettingsCategoryTitleByName("Changing CLICK-PIN");
     }
 
+    public void clickToTrustedDevices() {
+        this.waitForElementAndClick(TRUSTED_DEVICES, "Can not found trusted devices btn", 5);
+        this.waitForSettingsCategoryTitleByName("Trusted Devices");
+    }
+
+    public void clickToKillAllSessions() {
+        this.waitForElementAndClick(KILL_ALL_SESIONS, "Can not found kill all sessions btn", 5);
+    }
+
+    public void clickToKillFourthSession() {
+        this.waitForElementAndClick(FOURTH_INDEX_SESSIONS_X_BTN, "Can not found fourth session", 5);
+    }
+
+    public void clickToCancel() {
+        this.waitForElementAndClick(CANCEL_BTN, "Can not found cancel btn", 5);
+    }
+
+    public void clickToUseFingerPrint() {
+        this.waitForElementAndClick(FINGER_PRINT_BTN, "Can not found finger print btn", 5);
+    }
+
+    public void clickToNextOnSessionKill() {
+        this.waitForElementAndClick(NEXT_BTN, "Can not found cancel btn", 5);
+    }
+
+    public void clickToTechnicalSupport() {
+        this.waitForElementAndClick(TECHNICAL_SUPPORT, "Can not found and click to technical support", 5);
+        this.waitForSettingsCategoryTitleByName("Technical Support");
+    }
+
+    //TS - technical support
+    public void clickToTSRegistration() {
+        this.waitForElementAndClick(TS_REGISTRATION, "Can not found technical support registration button", 5);
+    }
+
+    public void waitForFingerPrintBtnDisable() {
+        WebElement element = waitForElementPresent(FINGER_PRINT_BTN, "Can not found finger print btn", 5);
+        if (element.getAttribute("checked").equals("true")) {
+            this.waitForElementAndClick(FINGER_PRINT_BTN, "Can not found finger print btn and click it", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("false"));
+    }
+
+    public void waitForFingerPrintBtnEnable() {
+        WebElement element = waitForElementPresent(FINGER_PRINT_BTN, "Can not found finger print btn", 5);
+        if (element.getAttribute("checked").equals("false")) {
+            this.waitForElementAndClick(FINGER_PRINT_BTN, "Can not found finger print btn and click it", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("true"));
+    }
+
+    public void waitForLockAppDisable() {
+        WebElement element = waitForElementPresent(LOCK_APP_BTN, "Can not found lock application btn", 5);
+        if (element.getAttribute("checked").equals("true")) {
+            this.waitForElementAndClick(LOCK_APP_BTN, "Can not found and click to lock applitaction btn", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("false"));
+    }
+
+    public void waitForLockAppEnable() {
+        WebElement element = waitForElementPresent(LOCK_APP_BTN, "Can not found lock application btn", 5);
+        if (element.getAttribute("checked").equals("false")) {
+            this.waitForElementAndClick(LOCK_APP_BTN, "Can not found and click to lock applitaction btn", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("true"));
+    }
+
     public void turnOnVibration() {
-        this.waitForElementAndClick(GENERAL_VIBRATION, "Can not turn on vibration", 5);
+        WebElement element = this.waitForElementPresent(GENERAL_VIBRATION, "Can not turn on vibration", 5);
+        if (element.getAttribute("checked").equals("false")) {
+            this.waitForElementAndClick(GENERAL_VIBRATION, "Can not turn on vibration", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("true"));
     }
 
     public void turnOffVibration() {
-        this.waitForElementAndClick(GENERAL_VIBRATION, "Can not turn off vibration", 5);
+        WebElement element = this.waitForElementPresent(GENERAL_VIBRATION, "Can not turn on vibration", 5);
+        if (element.getAttribute("checked").equals("true")) {
+            this.waitForElementAndClick(GENERAL_VIBRATION, "Can not turn on vibration", 5);
+        }
+        Assert.assertTrue(element.getAttribute("checked").equals("false"));
     }
 
     public void waitForTitleOfSettings() {
@@ -180,7 +271,12 @@ public class SettingsPageObject extends MainPageObject {
         this.swipeLeftFromRightUntilFindElement(YEAR, year, "Can not found this year", 20);
     }
 
-    public void swipeFromBottomToUp() {
+    public void swipeUpTwoTimes() {
         this.swipeUp(1000);
+        this.swipeUp(1000);
+    }
+
+    public String getDeviceName() {
+        return this.waitForElementAndGetAttribute(FOURTH_INDEX_SESSION_TIME, "text", "Can not get element text", 5);
     }
 }

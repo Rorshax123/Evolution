@@ -55,21 +55,21 @@ public class RegistrationPageObject extends MainPageObject {
         Metoo metoo = new Metoo();
         navigationUI.openMainMenuBeforeReg();
         navigationUI.clickToRegistration();
-        this.clickToNumbers(Metoo.NICKS_PHONE_NUMBER);
+        this.clickToNumbers(Metoo.PHONE_NUMBER);
         navigationUI.clickToDeny();
-        this.clickToNumbers(Metoo.NICKS_SMS_CODE);
+        this.clickToNumbers(Metoo.SMS_CODE);
     }
 
 
     public void waitPinFormAndAddPin() {
         Metoo metoo = new Metoo();
         this.waitForgotClickPinBtn();
-        this.clickToNumbers(Metoo.NICKS_PIN_CODE);
+        this.clickToNumbers(Metoo.PIN_CODE);
     }
 
     public void addPin() {
         Metoo metoo = new Metoo();
-        this.clickToNumbers(Metoo.NICKS_PIN_CODE);
+        this.clickToNumbers(Metoo.PIN_CODE);
     }
 
     public void addPin(String newPin) {

@@ -5,7 +5,7 @@ import lib.ui.NavigationUI;
 import lib.ui.SettingsPageObject;
 import org.junit.Test;
 
-public class personalInformation extends CoreTestCase {
+public class PersonalInformation extends CoreTestCase {
 
     @Test
     public void testBirthDate() {
@@ -30,7 +30,7 @@ public class personalInformation extends CoreTestCase {
         settingsPageObject.clickToPersonalInfo();
         settingsPageObject.clickToRegion();
         settingsPageObject.waitForSettingsCategoryTitleByName("Pick your region");
-        settingsPageObject.swipeFromBottomToUp();
+        settingsPageObject.swipeUpTwoTimes();
         settingsPageObject.clickToRegionKhorezm();
         settingsPageObject.clickToSave();
     }
